@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site com GRID</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="box">
+      <div class="heder-t" <div class="logo">Logo</div>
+      <img
+        src="https://img.icons8.com/ios-glyphs/452/menu--v1.png"
+        alt="iconMenu"
+        width="30px"
+        class="menu-btn"
+        id="button"
+      />
+      <nav>
+        <ul id="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="box">
+      <article>
+        <h1>Bolo de banana</h1>
+        <h2>Ingredientes - massa</h2>
+        <ul class="receita-lista">
+          <li>3 ovos</li>
+          <li>2 xícaras (chá) de açúcar</li>
+          <li>1 xícara (chá) de leite</li>
+          <li>1/2 xícara (chá) de óleo</li>
+          <li>2 xícaras (chá) de farinha de trigo</li>
+          <li>1 colher (sopa) de fermento químico</li>
+          <li>7 bananas</li>
+        </ul>
+        <h2>Ingredientes - cobertura</h2>
+        <ul class="receita-lista">
+          <li>3/4 xícara (chá) de açúcar</li>
+          <li>1/2 xícara (chá) de água quente</li>
+        </ul>
+
+        <h2>Modo de preparo - cobertura</h2>
+        <ol class="receita-lista-preparo">
+          <li class="lista1">
+            Em uma panela, adicione o açúcar e misture até derreter.
+          </li>
+
+          <li class="lista2">
+            Despeje a água quente e mexa até dissolver o açúcar.
+          </li>
+
+          <li class="lista3">
+            Deixe engrossar até chegar ao ponto de calda e reserve.
+          </li>
+        </ol>
+        <h2>Modo de preparo - massa</h2>
+        <ol class="receita-lista-preparo">
+          <li class="lista1">
+            Bata no liquidificador os ovos, o açúcar, o óleo e o leite.
+          </li>
+
+          <li class="lista2">
+            Acrescente a farinha de trigo aos poucos e continue batendo até
+            obter uma massa lisa e homogênea.
+          </li>
+
+          <li class="lista3">
+            Adicione por último o fermento e bata na velocidade mínima do
+            liquidificador.
+          </li>
+
+          <li class="lista4">Unte uma forma média com margarina e farinha.</li>
+
+          <li class="lista5">
+            Despeje o caramelo e as bananas cortadas no comprimento.
+          </li>
+
+          <li class="lista6">
+            Leve para assar em forno médio 180ºC, pré-aquecido por
+            aproximadamente 30 minutos.
+          </li>
+        </ol>
+      </article>
+      <aside>
+        <h3>Dicas para o melhor bolo de banana</h3>
+        <p>
+          A quantidade de bananas na receita de bolo de banana varia de acordo
+          com o tamanho da forma. Para dar mais sabor ao bolo, você também pode
+          acrescentar 1 colher (sopa) de canela à massa. Fica uma delícia! Essa
+          receita de bolo é ótima para aproveitar aquela banana madura esquecida
+          na cozinha!
+        </p>
+        <img
+          src="https://i0.wp.com/anamariabraga.globo.com/wp-content/uploads/2019/10/bolo-de-banana-simples.jpg?resize=1024%2C576&ssl=1"
+          alt="Bolo de banana"
+        />
+      </aside>
+    </main>
+    <footer class="box">
+      <p>
+        &copy; Todos direitos reservados<a
+          href="https://github.com/gabrielvieira35"
+        >
+          Gabriel Vieira</a
+        >
+      </p>
+    </footer>
+    <script>
+      const btnMenu = document.getElementById("button");
+      btnMenu.onclick = function () {
+        const menu = document.getElementById("menu");
+        if (menu.style.display === "flex") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "flex";
+        }
+      };
+    </script>
+  </body>
+</html>

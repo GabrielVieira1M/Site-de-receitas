@@ -1,0 +1,235 @@
+/*==============CSS reset=============================*/
+* {
+  padding: 0;
+  margin: 0;
+}
+/*===================TAGS=============================*/
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 120px 1fr 80px;
+  gap:50px;
+
+
+  grid-template-areas: 
+  'cabecalho cabecalho'
+  'conteudo conteudo'
+  'rodape rodape';
+
+  
+  background: #F0F0F0;
+  color: #64280e;
+}
+header {
+  grid-area:cabecalho;
+  display:flex;
+  justify-content:space-between;
+  padding: 30px;
+  align-items:center;
+  background:#FF6A28;
+  color:white;
+  background-size:cover;
+  background-repeat:no-repeat;
+  box-shadow: 2px 2px 4px #00000029;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style:none;
+  gap:15%;
+  margin-right: 60px;
+}
+nav ul li a {
+  text-decoration:none;
+
+  color: white;
+  padding-top:10px;
+}
+nav ul li a:hover {
+  color:#793600;
+  padding-top:10px;
+  border-top: 2px solid #793600;
+  transition: 200ms;
+}
+main {
+  grid-area:conteudo;
+  display:grid;
+  grid-template-columns:2.1fr 1fr;
+  grid-template-rows:1fr;
+}
+article {
+  padding-left: 20px;
+  border-right: 2px solid #b78c8c29;
+  padding-right: 10px;
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+  border-color: #DC7901;
+}
+article ol li {
+  display: flex;
+  align-items: center;
+}
+main img {
+  width: 100%;
+}
+
+article h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #FF6A28;
+  letter-spacing: 0.1rem;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  font-weight: lighter;
+}
+article h2 {
+  font-size: 1.4rem;
+  color: #FF6A28;
+}
+article,aside {
+  background:#F0F0F0;
+  padding-top: 50px;
+}
+aside {
+  padding:50px 30px;
+  background: #DC7901;
+}
+aside h3 {
+  color: #7a3c01;
+}
+aside p {
+  margin-top: 20px;
+  line-height: 1.6rem;
+  color: #7e3e06;
+}
+article ul, article ol {
+  margin:20px 0px 100px 0px;
+  max-width: 100%;
+}
+aside img {
+  margin-top: 100px;
+}
+footer {
+  grid-area:rodape;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#DC7901;
+  color: #793600;
+  font-weight: bold;
+
+}
+footer a {
+  color:white;
+  text-decoration:none;
+  font-weight: bold;
+}
+footer a:hover {
+text-decoration:underline;
+}
+article  li {
+  margin-bottom: 20px;
+}
+/*==================CLASSES===========================*/
+
+.receita-lista {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+.receita-lista-preparo {
+  list-style-type: none;
+
+}
+.lista1::before {
+  content: '1';
+  font-size: 2rem;
+  margin-right:20px;
+  color: #4e1c07;
+}
+.lista2::before {
+  content: '2';
+  font-size: 2rem;
+  margin-right:20px;
+  color: #4e1c07;
+}
+.lista3::before {
+  content: '3';
+  font-size: 2rem;
+  margin-right:20px;
+  color: #4e1c07;
+}
+.lista4::before {
+  content: '4';
+  font-size: 2rem;
+  margin-right:20px;
+  color: #4e1c07;
+}
+.lista5::before {
+  content: '5';
+  font-size: 2rem;
+  margin-right:20px;
+  color: #4e1c07;
+}
+.lista6::before {
+  content: '6';
+  font-size: 2rem;
+  margin-right:20px;
+  color: #4e1c07;
+}
+.menu-btn {
+  display: none;
+}
+/*==================RESPONSIVO========================*/
+@media (max-width:650px) {
+  main {
+      grid-template-columns:1.5fr;
+      grid-template-rows:1fr 1fr;
+  }
+  header::not(nav) {
+  align-items:center;
+  }
+  nav {
+ z-index:2;
+ 
+  }
+  nav ul {
+    display: none;
+    flex-direction:column;
+    gap:20px;
+    padding:0;
+    background: #611d0071;
+    height: 100vh;
+    padding: 10px;
+    width: 100%;
+    padding-right:20px;
+    margin-top:780px;
+ 
+
+  }
+  nav ul li {
+    padding: 20px;
+    text-transform:uppercase;
+    font-weight:bold;
+  }
+  nav ul li a{
+     color: #fff;
+  }
+    nav ul li a:hover{
+     border:none;
+  }
+  .img {
+    display:flex ;
+    z-index:3;
+    color: white;
+    cursor:pointer;
+    margin-right:60px;
+  }
+  .menu-btn {
+    display: block;
+  }
+
+}
